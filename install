@@ -1,0 +1,8 @@
+#!/bin/bash
+
+(
+    cd docker/php
+    docker build -t emailsender-php-interpreter:latest .
+)
+
+bin/composer install
